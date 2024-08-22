@@ -9,6 +9,6 @@ public class Main {
         BeanFactory factory = new ClassPathXmlApplicationContext("spring.xml");
 
         Alien obj = (Alien) factory.getBean("alien");
-
+        obj.code();
     }
 }
