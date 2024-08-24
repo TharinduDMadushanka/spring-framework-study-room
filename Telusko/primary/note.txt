@@ -1,0 +1,4 @@
+Application Context
+
+01. BeanFactory වෙනුවට ApplicationContext යොදා ගන්නවානම් අපි configure කරන xml file එක class path එකේ දන්න ඕන  (Resources )
+02. BeanFactory එකට  related හැම  interface එකක්ම ApplicationContext interface එකෙන්  extend වෙලා තියෙනවා 

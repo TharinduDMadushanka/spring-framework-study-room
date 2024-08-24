@@ -1,0 +1,11 @@
+Bean Factory
+
+1. create normal maven project.
+2. ⁠spring core වල features ඔන නිසා 'spring context' dependancy එක add කරනවා.
+3. ⁠අපි object හැදුවොත් අපි ඒක destroy කරන්න වෙනව ඒක නිසා spring වලට කියල object manage කරගන්න පුලුවන් ( DI use කරල ).
+4. ⁠getBean() වලින් අපිට obj එක දෙනවා but ඒක ApplicationContextbඑකේ interface එකට අයිති, ඒක නිසා තමයි අපි spring context add කරගත්තෙ.
+5. ⁠අපිට car එකක් ඔන නම් car factory එකක් ඔන වගෙ තමයි bean එකක් ඔන නම් bean factory එකක් ඔන.
+6. ⁠Bean Factory instance එක හදනවා.
+7. ⁠'alien' කියන්නෙ මොකක්ද කියල config කරන්න ඔන.
+8. ⁠ඒකට අවශ්‍ය xml file එක හදනවා recourses ඇතුලෙ -> spring.xml
+9. ⁠alien කියන්නෙ මොකක්ද කියල configure කරනවා
