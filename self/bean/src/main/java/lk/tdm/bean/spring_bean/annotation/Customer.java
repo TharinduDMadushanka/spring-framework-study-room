@@ -1,4 +1,4 @@
-package lk.tdm.spring_bean.annotation;
+package lk.tdm.bean.spring_bean.annotation;
 
 import org.springframework.stereotype.Component;
 

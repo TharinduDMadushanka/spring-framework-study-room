@@ -1,10 +1,10 @@
-package lk.tdm.spring_bean.annotation;
+package lk.tdm.bean.spring_bean.annotation;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "lk.tdm.spring_bean.annotation")
+@ComponentScan(basePackages = "lk.tdm.bean.spring_bean.annotation")
 public class AppConfig {
 }
 

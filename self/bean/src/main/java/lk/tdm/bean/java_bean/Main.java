@@ -1,4 +1,4 @@
-package lk.tdm.java_bean;
+package lk.tdm.bean.java_bean;
 
 public class Main {
     public static void main(String[] args) {

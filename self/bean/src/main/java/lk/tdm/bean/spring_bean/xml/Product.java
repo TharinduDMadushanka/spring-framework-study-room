@@ -1,4 +1,4 @@
-package lk.tdm.spring_bean.xml;
+package lk.tdm.bean.spring_bean.xml;
 
 public class Product {
 

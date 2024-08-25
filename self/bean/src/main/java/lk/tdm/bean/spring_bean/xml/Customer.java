@@ -1,8 +1,8 @@
-package lk.tdm.java_bean;
+package lk.tdm.bean.spring_bean.xml;
 
 import java.io.Serializable;
 
-public class Customer implements Serializable {
+public class Customer{
 
     private String name;
     private int age;

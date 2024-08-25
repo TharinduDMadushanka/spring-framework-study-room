@@ -4,13 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Spring Bean Configuration -->
-    <bean id="customer" class="lk.tdm.spring_bean.xml.Customer">
+    <bean id="customer" class="lk.tdm.bean.spring_bean.xml.Customer">
         <property name="name" value="TDM Shankar" />
         <property name="age" value="22"/>
     </bean>
 
     <!-- Spring Bean Configuration -->
-    <bean id="product" class="lk.tdm.spring_bean.xml.Product">
+    <bean id="product" class="lk.tdm.bean.spring_bean.xml.Product">
         <property name="prodName" value="Biscuit"/>
         <property name="price" value="100"/>
         <property name="qoh" value="10"/>
