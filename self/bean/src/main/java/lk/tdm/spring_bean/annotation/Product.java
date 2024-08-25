@@ -1,5 +1,8 @@
-package lk.tdm.spring_bean.xml;
+package lk.tdm.spring_bean.annotation;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Product {
 
     private String prodName;
