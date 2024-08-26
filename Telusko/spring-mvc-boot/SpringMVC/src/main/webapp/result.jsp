@@ -8,13 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    Welcome TDM.!
 
-    <form action="add">
-        Enter 1st Number : <input type="text" name="num1"><br>
-        Enter 2nd Number : <input type="text" name="num2"><br>
-        <input type="submit">
-    </form>
+    Result is: ${num3}
 
 </body>
 </html>
