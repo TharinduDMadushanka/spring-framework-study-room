@@ -10,6 +10,7 @@
 <body>
 
     Result is: ${alien}
-<%--    Result is: ${a1}--%>
+
+    Welcome back ${name}
 </body>
 </html>
