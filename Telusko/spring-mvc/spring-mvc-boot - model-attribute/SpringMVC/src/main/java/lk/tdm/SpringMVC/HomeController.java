@@ -3,6 +3,7 @@ package lk.tdm.SpringMVC;
 import lk.tdm.SpringMVC.model.Alien;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -29,10 +30,21 @@ public class HomeController {
     }
     */
 
+    /**
     @RequestMapping("addAlien")
-    public String addAlien(Alien a, Model m ){
+    public String addAlien(@ModelAttribute Alien a, Model m ){
 
         m.addAttribute("alien",a);
+
+        return "result";
+    }
+
+    */
+
+    @RequestMapping("addAlien")
+    public String addAlien(@ModelAttribute() Alien a){
+
+//        m.addAttribute("alien",a);
 
         return "result";
     }
