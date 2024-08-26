@@ -1,10 +1,16 @@
-package lk.tdm.constructor;
+package lk.tdm.annotation.controller;
 
+import lk.tdm.annotation.service.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class CustomerController {
 
     private final CustomerService customerService;
 
     // Constructor injection
+    @Autowired
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
     }
@@ -13,10 +19,4 @@ public class CustomerController {
         customerService.serve();
         System.out.println("CustomerController has processed the request.");
     }
-
 }
-
-/**
- * the CustomerController depends on CustomerService.
- * The CustomerService dependency is injected via the constructor.
- */

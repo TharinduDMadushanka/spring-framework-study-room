@@ -1,4 +1,4 @@
-package lk.tdm.field;
+package lk.tdm.types.field;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package lk.tdm.constructor;
+package lk.tdm.types.constructor;
 
 public class CustomerService {
     public void serve() {

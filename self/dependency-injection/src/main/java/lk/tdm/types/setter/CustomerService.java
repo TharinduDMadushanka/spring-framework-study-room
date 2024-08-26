@@ -1,4 +1,4 @@
-package lk.tdm.setter;
+package lk.tdm.types.setter;
 
 public class CustomerService {
     public void serve() {

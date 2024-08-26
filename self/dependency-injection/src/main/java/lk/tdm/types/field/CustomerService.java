@@ -1,4 +1,4 @@
-package lk.tdm.field;
+package lk.tdm.types.field;
 
 public class CustomerService {
     public void serve() {
