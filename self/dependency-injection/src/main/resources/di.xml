@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the CustomerService bean -->
+    <bean id="customerService" class="lk.tdm.xml.service.CustomerService"/>
+
+    <!-- Define the CustomerController bean with dependency injection -->
+    <bean id="customerController" class="lk.tdm.xml.controller.CustomerController">
+        <!-- Inject CustomerService bean via setter method -->
+        <property name="customerService" ref="customerService"/>
+    </bean>
+
+<!--    ================= Product =============================-->
+
+    <bean id="prodService" class="lk.tdm.xml.service.ProductService"/>
+
+    <bean id="prodController" class="lk.tdm.xml.controller.ProductController">
+        <property name="productService" ref="prodService"/>
+    </bean>
+
+</beans>
+
+        <!--
+        <bean>: This element defines a Spring bean.
+        id: The unique identifier for the bean in the Spring IoC container.
+        class: The fully qualified class name of the bean.
+        <property>: This element is used to inject a dependency via a setter method.
+            name: Refers to the name of the property (corresponding to the setter method setCustomerService).
+            ref: Refers to the ID of the bean to inject.
+        -->
