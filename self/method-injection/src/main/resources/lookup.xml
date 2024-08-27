@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Prototype bean -->
+    <bean id="command" class="lk.tdm.lookup.Command" scope="prototype"/>
+
+    <!-- Singleton bean with lookup method injection -->
+    <bean id="commandManager" class="lk.tdm.lookup.CommandManagerImpl">
+        <lookup-method name="createCommand" bean="command"/>
+    </bean>
+
+</beans>
+
+<!--
+<bean id="command" class="com.example.service.Command" scope="prototype"/>:-->
+<!--        This defines the Command bean as a prototype, meaning a new instance is created every time it is requested.-->
+
+<!--<lookup-method name="createCommand" bean="command"/>:-->
+<!--        This tells Spring that when the createCommand() method is called on the CommandManager, it should return a new Command
+            instance (prototype-scoped).-->
