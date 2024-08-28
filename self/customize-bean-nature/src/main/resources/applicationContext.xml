@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="databaseConnection" class="lk.tdm.annotation.DatabaseConnection"
+          init-method="customInit" destroy-method="customDestroy" />
+
+</beans>
+
+
+<!--        init-method="customInit":
+Specifies that the customInit() method should be called after the bean is created.-->
+
+<!--        destroy-method="customDestroy":
+ Specifies that the customDestroy() method should be called before the bean is destroyed.-->
