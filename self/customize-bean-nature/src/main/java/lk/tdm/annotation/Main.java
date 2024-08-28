@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Load the Spring context from the XML configuration file
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("annotation.xml");
 
         // Retrieve the DatabaseConnection bean from the context
         DatabaseConnection dbConnection = context.getBean("databaseConnection", DatabaseConnection.class);
