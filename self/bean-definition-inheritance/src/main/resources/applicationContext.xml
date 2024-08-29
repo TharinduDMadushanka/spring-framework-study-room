@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Parent Bean Definition -->
+    <bean id="baseCustomer" class="lk.tdm.Customer" abstract="true">
+        <property name="name" value="TDM"/>
+        <property name="address" value="Galle Road"/>
+    </bean>
+
+    <!--        id="baseCustomer":
+    This is the ID of the parent bean.-->
+    <!--        abstract="true":
+    Marks this bean as abstract, meaning it cannot be instantiated on its own.-->
+    <!--        Common Properties:
+     The name and address properties are defined here and will be inherited by child beans.-->
+
+
+    <!-- Inherited Bean 1 -->
+    <bean id="customer1" parent="baseCustomer">
+        <property name="contactNumber" value="123"/>
+    </bean>
+
+    <!-- Inherited Bean 2 -->
+    <bean id="customer2" parent="baseCustomer">
+        <property name="contactNumber" value="456"/>
+        <!-- Override the name property -->
+        <property name="name" value="Shankar"/>
+    </bean>
+
+    <bean id="customer3" parent="baseCustomer">
+        <property name="name" value="Madu"/>
+        <property name="address" value="Matara"/>
+        <property name="contactNumber" value="789"/>
+    </bean>
+
+</beans>
+
+
+<!--        parent="baseCustomer":
+Specifies that these beans inherit from the baseCustomer bean.-->
+<!--        Inherited Properties:
+Both customer1 and customer2 inherit the name and address properties from baseCustomer.-->
+<!--        Overriding Properties:
+customer2 overrides the name property with a different value.-->
